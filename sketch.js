@@ -58,13 +58,13 @@ function draw() {
   sling5.display();
 
   drawSprites();
-  keyPressed();
+  
  
 }
 
 function keyPressed() { 
    //When using make sure to press the down arrow right away after the up arrow
-	if (keyCode === UP_ARROW) 
+	if (keyCode === 32) 
     { Matter.Body.applyForce(bob5.body,bob5.body.position,{x:100,y:100}); } 
 } 
 
